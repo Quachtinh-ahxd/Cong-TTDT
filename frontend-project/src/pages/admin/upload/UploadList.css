@@ -1,0 +1,53 @@
+.upload-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+.upload-container *,
+.upload-container h1,
+.upload-container h2,
+.upload-container h3,
+.upload-container h4,
+.upload-container h5,
+.upload-container h6,
+.upload-container .btn,
+.upload-container .table,
+.upload-container .table th,
+.upload-container .table td,
+.upload-container .text-muted,
+.upload-container small,
+.upload-container .badge,
+.upload-container .form-control {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.upload-container .table th {
+  font-weight: 600 !important;
+}
+
+.upload-container .btn {
+  font-weight: 500 !important;
+}
+
+/* Fix icon display */
+.upload-container .table td .fas {
+  display: inline-block !important;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900 !important;
+}
+
+/* Fix badge display */
+.upload-container .badge {
+  display: inline-block !important;
+  padding: 0.375em 0.75em !important;
+  font-size: 0.75em !important;
+  line-height: 1 !important;
+  border-radius: 0.25rem !important;
+}
+
+/* Fix date display */
+.upload-container .table td small {
+  font-size: 0.875em !important;
+  color: #6c757d !important;
+}
+

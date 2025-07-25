@@ -1,0 +1,254 @@
+.main-navbar {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  padding: 0;
+  box-shadow: 0 2px 15px rgba(0,123,255,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  min-height: 55px;
+}
+
+.breaking-news {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  min-height: 55px;
+  flex: 0 0 320px;
+  position: relative;
+  overflow: hidden;
+}
+
+.breaking-news::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #dc3545;
+  border-top: 27.5px solid transparent;
+  border-bottom: 27.5px solid transparent;
+}
+
+.breaking-label {
+  background: rgba(255,255,255,0.2);
+  padding: 6px 12px;
+  margin-right: 15px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.breaking-text {
+  flex: 1;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.breaking-text marquee {
+  font-size: 0.9rem;
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  padding-left: 20px;
+}
+
+.main-menu li {
+  position: relative;
+}
+
+.main-menu a {
+  display: block;
+  padding: 17px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.main-menu a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: #ffc107;
+  transition: all 0.3s;
+  transform: translateX(-50%);
+}
+
+.main-menu a:hover::before,
+.main-menu a.active::before {
+  width: 80%;
+}
+
+.main-menu a:hover,
+.main-menu a.active {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Thêm hover effect cho dropdown */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Đảm bảo dropdown menu không bị ẩn khi hover vào nó */
+.dropdown-menu:hover {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Smooth transition */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 280px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border-radius: 8px;
+  border-top: 3px solid #007bff;
+}
+
+/* Khi có class open hoặc hover */
+.dropdown.open .dropdown-menu,
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #333;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #f1f3f4;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.dropdown-menu a::before {
+  display: none;
+}
+
+.dropdown-menu a:hover {
+  background: #f8f9fa;
+  color: #007bff;
+  padding-left: 25px;
+}
+
+.dropdown-menu li:last-child a {
+  border-bottom: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 991px) {
+  .navbar-content {
+    flex-direction: column;
+  }
+  
+  .breaking-news {
+    width: 100%;
+    flex: none;
+  }
+  
+  .main-menu {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+  
+  .main-menu li {
+    width: 100%;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: rgba(255,255,255,0.95);
+    margin-top: 0;
+    border-radius: 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .dropdown.open .dropdown-menu {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .breaking-news {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .breaking-label {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+
+

@@ -1,0 +1,92 @@
+/* Admin Sidebar - Menu quản trị đồng bộ */
+.admin-sidebar-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.admin-sidebar-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.admin-sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-sidebar-item {
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  margin: 0;
+}
+
+.admin-sidebar-item:last-child {
+  border-bottom: none;
+}
+
+.admin-sidebar-item:hover {
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 100%);
+  transform: translateX(5px);
+}
+
+.admin-sidebar-link {
+  color: #000000 !important;
+  text-decoration: none !important;
+  padding: 1rem 1.5rem;
+  display: block;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  background: #ffffff;
+}
+
+.admin-sidebar-link:hover {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.admin-sidebar-link i {
+  width: 20px;
+  color: #667eea;
+  font-size: 1.1rem;
+}
+
+.admin-sidebar-item.active .admin-sidebar-link {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.admin-sidebar-item.active .admin-sidebar-link i {
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-sidebar-container {
+    margin-bottom: 1rem;
+  }
+  
+  .admin-sidebar-header {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  .admin-sidebar-link {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+}

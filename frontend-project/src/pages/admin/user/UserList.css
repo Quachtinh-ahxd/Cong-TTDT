@@ -1,0 +1,43 @@
+/* Styling cho danh sách người dùng */
+.user-thumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.no-image-text {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+
+/* Styling cho các nút thao tác */
+.btn-group .btn {
+  margin-right: 5px;
+}
+
+.btn-group .btn:last-child {
+  margin-right: 0;
+}
+
+/* Styling cho bảng */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Styling cho badge trạng thái */
+.badge {
+  font-weight: 500;
+  padding: 5px 10px;
+}

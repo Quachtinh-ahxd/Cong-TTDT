@@ -1,0 +1,270 @@
+.trung-doan-co-quan-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.page-header {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,10 90,90 10,90" fill="rgba(255,255,255,0.05)"/></svg>') repeat;
+  background-size: 100px 100px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+.org-badge {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.badge-icon i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.badge-text span {
+  display: block;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.badge-text small {
+  opacity: 0.8;
+}
+
+/* Intro Section */
+.intro-section {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  color: #dc3545;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.stats-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #dc3545;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Org Chart Visual */
+.org-chart-visual {
+  padding: 2rem;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.org-level {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.org-box {
+  background: #dc3545;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  min-width: 100px;
+  box-shadow: 0 4px 15px rgba(220,53,69,0.3);
+}
+
+.org-box.political { background: #28a745; }
+.org-box.staff { background: #007bff; }
+.org-box.technical { background: #fd7e14; }
+.org-box.logistics { background: #6f42c1; }
+.org-box.battalion { background: #20c997; }
+
+/* Unit Cards */
+.unit-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.unit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.unit-header {
+  padding: 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.unit-icon i {
+  font-size: 2rem;
+}
+
+.unit-title h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.unit-body {
+  padding: 1.5rem;
+}
+
+.unit-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.unit-functions h6 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.unit-functions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.unit-functions li {
+  padding: 0.3rem 0;
+  color: #666;
+}
+
+.unit-functions li i {
+  color: #28a745;
+}
+
+/* Motto Section */
+.motto-section {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.motto-header {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.motto-header h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.motto-content {
+  padding: 2rem;
+}
+
+.motto-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+.motto-item i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.motto-item h5 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.motto-item p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .stats-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .org-level {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .org-box {
+    min-width: 150px;
+  }
+}

@@ -1,0 +1,20 @@
+// Sử dụng POST với đường dẫn chính xác
+fetch(`/api/brand/update/${brandId}`, {
+  method: 'POST',
+  body: formData,
+  // Không set Content-Type khi dùng FormData
+})
+.then(response => {
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+  return response.json();
+})
+.then(data => {
+  console.log('Success:', data);
+  alert('Brand updated successfully!');
+})
+.catch(error => {
+  console.error('Error:', error);
+  alert('Error updating brand: ' + error.message);
+});

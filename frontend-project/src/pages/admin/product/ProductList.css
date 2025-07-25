@@ -1,0 +1,190 @@
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0;
+}
+
+.product-thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-thumbnail:hover {
+  transform: scale(1.05);
+  border-color: #007bff;
+  box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+}
+
+.no-image-text {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border: 1px dashed #dee2e6;
+  border-radius: 4px;
+  color: #6c757d;
+  font-size: 12px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-sm {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  min-width: 40px;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.btn-info {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: white;
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+  color: white;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.table {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  border: none;
+}
+
+.table th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  padding: 18px 15px;
+  text-align: center;
+}
+
+.table td {
+  vertical-align: middle;
+  padding: 18px 15px;
+  border-bottom: 1px solid #f1f3f4;
+  text-align: center;
+}
+
+/* Làm đẹp ID column */
+.table td:first-child {
+  font-weight: 700;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.table tbody tr {
+  transition: all 0.3s ease;
+}
+
+/* Hover effect cho rows */
+.table tbody tr:hover {
+  background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.badge {
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 0;
+}
+
+/* Header buttons */
+.header-buttons .btn {
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.header-buttons .btn-info {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  border: none;
+}
+
+.header-buttons .btn-primary {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .table th, .table td {
+    padding: 12px 8px;
+    font-size: 0.8rem;
+  }
+  
+  .product-thumbnail {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .btn-sm {
+    padding: 6px 10px;
+    min-width: 35px;
+  }
+  
+  .btn-group {
+    gap: 4px;
+  }
+}
+
+
+
+

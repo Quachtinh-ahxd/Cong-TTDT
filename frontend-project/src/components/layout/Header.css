@@ -1,0 +1,171 @@
+/* Top Bar */
+.top-bar {
+  background: linear-gradient(135deg, #333 0%, #555 100%);
+  color: white;
+  padding: 10px 0;
+  font-size: 0.85rem;
+  border-bottom: 2px solid #007bff;
+}
+
+.top-info .date {
+  color: #ccc;
+  font-weight: 500;
+}
+
+.top-info .date::before {
+  content: '\f073';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.top-social {
+  text-align: right;
+}
+
+.top-social a {
+  color: white;
+  margin-left: 15px;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+}
+
+.top-social a:hover {
+  color: white;
+  background: #007bff;
+  transform: translateY(-2px);
+}
+
+/* Main Header */
+.main-header {
+  background: white;
+  padding: 25px 0;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #007bff;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s;
+}
+
+.logo a:hover {
+  transform: scale(1.02);
+}
+
+.header-ad {
+  text-align: center;
+  padding: 10px;
+}
+
+.header-ad img {
+  max-height: 80px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-search {
+  text-align: right;
+}
+
+.search-form {
+  display: none !important;
+}
+
+.header-search .search-form {
+  display: none !important;
+}
+
+/* Hoặc xóa toàn bộ header-search cũ */
+.header-search {
+  display: none !important;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  background: #f8f9fa;
+}
+
+.search-form input::placeholder {
+  color: #999;
+}
+
+.search-form button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+
+.search-form button:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+  transform: scale(1.05);
+}
+
+@media (max-width: 991px) {
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-ad {
+    margin-bottom: 20px;
+  }
+  
+  .header-search {
+    text-align: center;
+  }
+  
+  .search-form {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo h1 {
+    font-size: 2.2rem;
+  }
+  
+  .top-social a {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
